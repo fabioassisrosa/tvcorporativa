@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Indoor Corporativa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="Logo_Ondulapel_Hor.png" alt="Logo da Empresa">
+        <h1>INFORME-SE!</h1>
+        <button onclick="openAdminPanel()" style="position: absolute; top: 10px; right: 10px; padding: 5px 10px;">Admin</button>
+    </header>
+
+    <main>
+        <div class="tv-content">
+            <iframe src="https://www.youtube.com/embed/57soPf-bShQ" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="info-panel">
+            <div id="info-container"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TV Indoor Corporativa. Todos os direitos reservados.</p>
+    </footer>
+
+    <div id="overlay" class="overlay" onclick="closeAdminPanel()"></div>
+    <div id="admin-panel">
+        <div id="admin-controls"></div>
+        <button onclick="closeAdminPanel()" style="margin-top: 10px;">Fechar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
